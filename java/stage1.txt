@@ -1,0 +1,12 @@
+stage1 
+* compute area and volume 
+* display the result 
+
+stage 2
+
+* promt the user to enter the length of the sides
+* collect the length of the sides 
+* store the length of the sides as length
+* calculate the volume and the area of the length using the fomular 
+collect both the area and volume 
+display the result

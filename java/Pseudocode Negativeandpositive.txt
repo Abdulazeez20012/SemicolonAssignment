@@ -1,0 +1,81 @@
+Pseudocode Negativeandpositive
+Stage1
+prompt and collect firstNumber
+prompt and collect  secondNumber
+prompt and collect thirdNumber
+prompt and collect forthNumber
+prompt and collect fifthNumber
+if num1 is greater than zero
+if num1 is less than zero
+if is not positive or negative 
+display zero
+
+if num2 is greater than zero
+if num2 is less than zero
+if is not positive or negative 
+display zero
+
+if num3 is greater than zero
+if num3 is less than zero
+if is not positive or negative 
+display zero
+
+if num4 is greater than zero
+if num4 is less than zero
+if is not positive or negative 
+display zero
+
+if num5 is greater than zero
+if num5 is less than zero
+if is not positive or negative 
+display zero
+
+Stage2
+prompts user to enter firstNumber
+save as num1
+prompts user to enter SecondNumber
+save as num2
+prompts user to enter thirdNumber
+save as num3
+prompts user to enter forthNumber
+save as num4
+prompts user to enter fifthNumber
+save as num5
+
+if num1 is greater than zero
+display number is positive
+if num1 is less then zero
+display negative
+if num1 is positive or negative
+display zero
+
+if num2 is greater than zero
+display number is positive
+if num2 is less then zero
+display negative
+if num2 is positive or negative
+display zero
+
+
+if num3 is greater than zero
+display number is positive
+if num3 is less then zero
+display negative
+if num3 is positive or negative
+display zero
+
+if num4 is greater than zero
+display number is positive
+if num4 is less then zero
+display negative
+if num4 is positive or negative
+display zero
+
+if num5 is greater than zero
+display number is positive
+if num5 is less then zero
+display negative
+if num5 is positive or negative
+display zero
+
+Display result
