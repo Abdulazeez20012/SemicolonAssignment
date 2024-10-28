@@ -1,0 +1,21 @@
+import java.util.Scanner;
+   
+public class MyAddition {
+      public static void main(String[] args){
+
+
+        Scanner input = new Scanner(System.in);
+        
+         System.out.print("Enter amount of wter in kilograms ");
+         float amount = input.nextfloat();
+         System.out.print("Enter innitial temperature of water ");
+         double innitial  = input.nextDouble();
+        System.out.print("Enter final temperature of water");
+          double final = input.nextDouble();
+        double energy = kiloram *(( final - innitial * 4184);
+}
+
+
+
+
+}
