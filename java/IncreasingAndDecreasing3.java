@@ -5,15 +5,12 @@ import java.util.Scanner;
 
      	Scanner scanner = new Scanner(System.in);
 
-  while (true) { 
+  while (num == -1){ 
             System.out.print("Enter a number (-1 to exit): ");  
             int num = scanner.nextInt(); 
 
-            if (num == -1) {                   
-		 break;
-
-            }
-System.out.print("input first number ");
+      
+         System.out.print("input first number ");
       	int num1 = scanner.nextInt();
 
         System.out.print("input second number ");
@@ -24,14 +21,14 @@ System.out.print("input first number ");
       	int num3 = scanner.nextInt();
 
 
-if (num1 < num2 && num2 < num3){
+        if (num1 < num2 && num2 < num3){
 	System.out.print("They are increasing numbers");
-}
+	}
 
-else if (num1 > num2 && num2 > num3){
+	else if (num1 > num2 && num2 > num3){
 	System.out.print("They are decreasing numbers"); 
 
-
+           break;
        }
  
     }
