@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class PrimeNumberGroup6 {
+    public static void main(String[] args) {
+       
+        Scanner scanner = new Scanner(System.in);
+
+        
+        System.out.print("Enter a number: ");
+        int num = scanner.nextInt();
+
+        
+        if (num > 1 && java.util.stream.IntStream.range(2, (int) Math.sqrt(num) + 1).noneMatch(i -> num % i == 0)) {
+            System.out.println(num + " is a prime number.");
+        } else {
+            System.out.println(num + " is not a prime number.");
+        }
+
+
+    }
+}
