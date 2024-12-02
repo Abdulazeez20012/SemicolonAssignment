@@ -17,7 +17,7 @@ public class GuessAndWin3 {
         while (true) {
             
             System.out.print("Guess a number between 1 and 100: ");
-            int userGuess = scanner.nextInt(43);
+            int userGuess = scanner.nextInt();
             numberOfTries++;
 
             
