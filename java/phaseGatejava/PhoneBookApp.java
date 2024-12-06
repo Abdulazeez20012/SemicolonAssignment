@@ -7,31 +7,33 @@ public class PhoneBookApp {
        
         String firstName = "";
         String lastName = "";
-        String phoneNumber = "";
+        int phoneNumber = 0;
 
        
         System.out.println("Phone Book App");
         System.out.println("1. Add contact");
         System.out.println("2. Find contact by phone number");
+	System.out.println("3. Remove contact");
         System.out.println("3. Exit");
 
       	boolean isAddingToContact = true;
        	     while (isAddingToContact) {
 
-             	 System.out.print("Choose an option (1-3): ");
+             	 System.out.print("Choose an option (1-4): ");
            	 int choice = scanner.nextInt();
-             
+             	scanner.nextLine();
 
          	   if (choice == 1) {
                 
-               			 System.out.print("Enter first name: ");
+               			 System.out.println("Enter first name: ");
                			 firstName = scanner.nextLine();
 	
-               			 System.out.print("Enter last name: ");
+               			 System.out.println("Enter last name: ");
                 		 lastName = scanner.nextLine();
 
-                		 System.out.print("Enter phone number: ");
-               			 phoneNumber = scanner.nextLine();
+                		 System.out.println("Enter phone number: ");
+               			 phoneNumber = scanner.nextInt();
+				scanner.nextLine();
 
                 System.out.println("Contact added!");
 
@@ -50,7 +52,7 @@ public class PhoneBookApp {
                					 }
           						  } else if (choice == 3) {
               
-            				    System.out.println("Goodbye!");
+            				    System.out.println("THANK YOU");
 					    isAddingToContact = false;
 						continue;
         				    } else {
