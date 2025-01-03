@@ -45,12 +45,12 @@ public class CreditCardValidator {
         boolean valid = luhnCheck(cardNumber);  
         String cardType = cardType(cardNumber);  
 
-      
+         System.out.println ("====================================================================");
         System.out.println("\nCredit Card Type: " + cardType);
         System.out.println("Credit Card Number: " + cardNumber);
         System.out.println("Credit Card Digit Length: " + cardLength);
         System.out.println("Credit Card Validity Status: " + (valid ? "Valid" : "Invalid"));
-
+	System.out.println("======================================================================");
        
     }
 }
