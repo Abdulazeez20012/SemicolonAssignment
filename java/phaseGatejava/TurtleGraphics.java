@@ -59,7 +59,7 @@ public class TurtleGraphics {
                 if (floor[i][j] == 1) {
                     System.out.print("*");
                 } else {
-                    System.out.print(" ");
+                    System.out.print("+ ");
                 }
             }
             System.out.println();
