@@ -2,35 +2,36 @@ import java.util.Scanner;
 
 public class CompoundInterestCalculator {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+
+        Scanner scanner = new Scanner(System.in);
         
 
         System.out.print("Enter initial investment: ");
-        double initialInvestment = sc.nextDouble();
+        double initialInvestment = scanner.nextDouble();
         
        
-       		 System.out.print("Enter monthly contribution (positive for deposit, negative for withdrawal): ");
-       		 double monthlyContribution = sc.nextDouble();
+       		 System.out.print("Enter monthly contribution:  ");
+       		 double monthlyContribution = scanner.nextDouble();
         
 
         		System.out.print("Enter length of time in years: ");
-       			 int years = sc.nextInt();
+       			 int years = scanner.nextInt();
         
         
-        			System.out.print("Enter annual interest rate (as decimal): ");
-       				 double interestRate = sc.nextDouble();
+        			System.out.print("Enter annual interest rate : ");
+       				 double interestRate = scanner.nextDouble();
         
 
-       					 System.out.print("Enter interest rate variance range  : ");
-       					 double variance = sc.nextDouble();
+       					 System.out.print("Enter interest rate variance range: ");
+       					 double variance = scanner.nextDouble();
         
          
-       						 System.out.print("Enter compound frequency (times per year, 1 for annually, 4 for quarterly): ");
-       						 int compoundFrequency = sc.nextInt();
+       						 System.out.print("Enter compound frequency: ");
+       						 int compoundFrequency = scanner.nextInt();
      
-       								 System.out.println("\nCalculating compound interest for the following scenarios:");
+       	System.out.println("\nCalculating compound interest:");
 
-       for (double rate = interestRate - variance; rate <= interestRate + variance; rate += 0.01) {
+       for (double rate = interestRate - variance; rate <= interestRate + variance; rate += 0.01)  {
         	 double totalAmount = initialInvestment;
           	double monthlyRate = rate / compoundFrequency;
             	int months = years * 12;
@@ -43,7 +44,7 @@ public class CompoundInterestCalculator {
                 }
             }
             
-           System.out.printf("Estimated amount at %.2f%% interest: %.2f\n", rate * 100, totalAmount);
+           System.out.printf("Estimated amount at %.2f%% interest: %.2f\n", rate * 100, totalAmount); 
         }
     }
 }

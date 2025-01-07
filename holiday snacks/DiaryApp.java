@@ -5,10 +5,10 @@ public class DiaryApp {
         Scanner scanner = new Scanner(System.in);
         
        			 String[] diaryIds = new String[10]; 
-       			 String[] diaryContents = new String[10];  
+       	s		 String[] diaryContents = new String[10];  
 
         boolean isLocked = false;
-        String password = "password123"; 
+        String password = "A.z24434"; 
         int entryCount = 0;
 
 
@@ -122,7 +122,7 @@ public class DiaryApp {
                 System.out.println("Diary locked!");
             } else if (choice == 6) {
               
-                System.out.println("Goodbye!");
+                System.out.println("Goodbye");
                 break;
             } else {
                 System.out.println("Invalid option. Try again.");
