@@ -9,7 +9,8 @@ public class PrimeNumberGroup6 {
             for (int i = 2; i <= Math.sqrt(number); i++) {
                 
           		 System.out.println(number + " is a prime number.");
-        } 	for (int i =2; i >= Math.sqrt(number); i--){
+
+        } 	for (int i =2; i >= Math.sqrt(number); i++){
                     		 System.out.println(number + " is not a prime number.");
       }
 }

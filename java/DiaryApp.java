@@ -8,7 +8,7 @@ public class DiaryApp {
        			 String[] diaryContents = new String[10];  
 
         boolean isLocked = false;
-        String password = "Az24434"; 
+        String password = "password123"; 
         int entryCount = 0;
 
 
@@ -122,7 +122,7 @@ public class DiaryApp {
                 System.out.println("Diary locked!");
             } else if (choice == 6) {
               
-                System.out.println("bye");
+                System.out.println("Goodbye!");
                 break;
             } else {
                 System.out.println("Invalid option. Try again.");

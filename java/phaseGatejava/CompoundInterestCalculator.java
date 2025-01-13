@@ -24,7 +24,7 @@ public class CompoundInterestCalculator {
        					 System.out.print("Enter interest rate variance range  : ");
        					 double variance = sc.nextDouble();
         
-        
+         
        						 System.out.print("Enter compound frequency (times per year, 1 for annually, 4 for quarterly): ");
        						 int compoundFrequency = sc.nextInt();
      

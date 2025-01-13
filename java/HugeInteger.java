@@ -11,22 +11,22 @@ public class HugeInteger {
         int carry = 0;               
 
        
-        System.out.print("Enter first huge number: ");
+        System.out.print("Enter first huge number (up to 40 digits): ");
         String num1 = input.nextLine();
 
         
-       			 for (int i = 0; i < num1.length(); i++) {
-            			number1[39 - i] = num1.charAt(num1.length() - 1 - i) - '0';
-       			 }
+        for (int i = 0; i < num1.length(); i++) {
+            number1[39 - i] = num1.charAt(num1.length() - 1 - i) - '0';
+        }
 
         
-        System.out.print("Enter second huge number: ");
+        System.out.print("Enter second huge number (up to 40 digits): ");
         String num2 = input.nextLine();
 
        
-       			 for (int i = 0; i < num2.length(); i++) {
-           			 number2[39 - i] = num2.charAt(num2.length() - 1 - i) - '0';
-      			  }
+        for (int i = 0; i < num2.length(); i++) {
+            number2[39 - i] = num2.charAt(num2.length() - 1 - i) - '0';
+        }
 
        
         for (int i = 39; i >= 0; i--) {
@@ -51,6 +51,6 @@ public class HugeInteger {
         if (leadingZero) {
             System.out.print(0);
         }
-      
+        System.out.println(); 
     }
 }
