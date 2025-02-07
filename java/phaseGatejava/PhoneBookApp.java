@@ -32,7 +32,7 @@ public class PhoneBookApp {
                 		 lastName = scanner.nextLine();
 
                 		 System.out.println("Enter phone number: ");
-               			 phoneNumber = scanner.nextInt();
+               			 phoneNumber = scanner.nextLine();
 				scanner.nextLine();
 
                 System.out.println("Contact added!");

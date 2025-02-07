@@ -11,7 +11,7 @@ public class HugeInteger {
         int carry = 0;               
 
        
-        System.out.print("Enter first huge number (up to 40 digits): ");
+        System.out.print("Enter first huge number : ");
         String num1 = input.nextLine();
 
         
@@ -20,9 +20,9 @@ public class HugeInteger {
         }
 
         
-        System.out.print("Enter second huge number (up to 40 digits): ");
+        System.out.print("Enter second huge number: ");
         String num2 = input.nextLine();
-
+ 
        
         for (int i = 0; i < num2.length(); i++) {
             number2[39 - i] = num2.charAt(num2.length() - 1 - i) - '0';
