@@ -1,34 +1,28 @@
-package Dsa;
+package SF2;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
-import org.junit.jupiter.api.Assertions.*;
-
 
 public class Diary {
     private final String userName;
     private final String password;
-    private boolean isLocked;
+    public boolean isLocked;
     private final List<Entry> entries;
 
 
-    public Diary(String userName, String password) {
+    public Diary(String userName,String password){
         this.userName = userName;
         this.password = password;
         this.isLocked = true;
         this.entries = new ArrayList<>();
     }
 
-    public boolean itExit() {
+    public boolean Exist() {
         return true;
     }
 
-    public boolean isLocked() {
-        return isLocked;
-    }
-
-    public boolean unlockDiary(String inputPassword) {
+    public boolean unLockDiary(String inputPassword) {
         if (inputPassword.equals(password)) this.isLocked = false;
         return false;
     }
@@ -41,9 +35,10 @@ public class Diary {
         entries.add(entry);
     }
 
+
     public Entry findEntryById(int id) {
-      for (Entry entry : entries) if (entry.getId() == id) return entry;
-      return null;
+        for (Entry entry : entries) if (entry.getId() == id) return entry;
+        return null;
     }
 
     public void updateEntry(int id, String newTitle, String newContent) {
@@ -53,7 +48,6 @@ public class Diary {
         entry.setContent(newContent);
         entry.setDateCreated(LocalDateTime.now());
     }
-
     public void deleteEntry(int id) {
         entries.removeIf(entry -> entry.getId() == id);
 
@@ -61,5 +55,9 @@ public class Diary {
     }
     public String getUserName() {
         return userName;
+    }
+
+    public boolean isLocked() {
+        return isLocked;
     }
 }

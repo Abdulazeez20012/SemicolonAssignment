@@ -1,7 +1,7 @@
-package Dsa;
+package SF2;
 
 import java.util.ArrayList;
-import java.util
+import java.util.List;
 
 public class Diaries {
     private final List<Diary> diaries;
@@ -20,6 +20,7 @@ public class Diaries {
         }
     }
 
+
     public Object findDiaryByUsername(String userName) {
         for(Diary diary : diaries) if(diary.getUserName().equals(userName)) return diary;{
             return null;
@@ -30,3 +31,5 @@ public class Diaries {
         for (Diary diary : diaries) if (diary.getUserName().equals(userName)) diaries.remove(diary);
     }
 }
+
+
